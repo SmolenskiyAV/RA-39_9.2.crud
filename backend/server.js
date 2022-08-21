@@ -21,6 +21,7 @@ router.get('/posts', async (ctx, next) => {
 router.post('/posts', async(ctx, next) => {
     const {id, content} = ctx.request.body;
     console.log('catched body: ', ctx.request.body);
+    id = Number(id);
     if (id !== 0) {
         posts = posts.map(o => o.id !== id ? o : {...o, content: content});
         ctx.response.status = 204;

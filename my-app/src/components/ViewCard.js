@@ -35,7 +35,7 @@ const ViewCard = () => {
     )
   };
 
-  const handleClick= evt => {  // ОБРАБОТКА НАЖАТИЯ КНОПКИ "Опубликовать"
+  const handleClick= evt => {  // ОБРАБОТКА НАЖАТИЯ КНОПКИ "DELET"
     
     fetch(`${url}/posts/${id}`, {    // отправка DELET-запроса на сервер
       method: 'DELETE',

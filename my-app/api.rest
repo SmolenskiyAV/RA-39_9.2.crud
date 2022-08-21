@@ -2,11 +2,10 @@
 
 ###
 
-GET {{url}}/notes
-
+GET {{url}}/posts
 ###
 
-POST {{url}}/notes
+POST {{url}}/posts
 Content-Type: application/json
 
 {
